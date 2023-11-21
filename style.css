@@ -1,0 +1,289 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #aac91f; /* Dark Gray */
+    color: #e3edf0;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/* Navigation link hover effect */
+a:hover {
+    color: #ff5500; /* Gold */
+}
+
+#toggle-mode {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#toggle-mode img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Dark mode styling for toggle button */
+body.dark-mode #toggle-mode img {
+    filter: invert(1);
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Dark mode styling for navigation links */
+body.dark-mode nav a {
+    color: #fff;
+}
+
+body.dark-mode nav ul li a {
+    color: #fff;
+}
+
+
+
+/* Dark mode styling for navigation links hover effect */
+body.dark-mode nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Dark mode styling for education entries */
+body.dark-mode .education-entry {
+    background-color: #2d2d2d; /* Darker Gray */
+    border-color: #4d4d4d; /* Border Gray */
+}
+
+body.dark-mode .education-entry h3 {
+    color: #ffcc00;
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+.profile {
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+#general-info {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#profile-picture {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    max-width: 50%;
+    height: auto;
+}
+
+#profile-picture:hover {
+    transform: scale(1.1);
+}
+
+#profile-description {
+    margin-top: 10px;
+}
+
+#education {
+    text-align: center;
+    padding: 50px;
+}
+
+.education-entry {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #808080; /* Lighter Gray */
+    border-radius: 5px;
+}
+
+.education-entry h3 {
+    color: #333333;
+}
+
+/* Responsive styling for education entries */
+@media (min-width: 600px) {
+    .education-entry {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+/* Projects Page styling */
+#projects {
+    text-align: center;
+    padding: 50px;
+}
+
+.project-entry {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #808080; /* Lighter Gray */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-entry h3 {
+    color: #333;
+}
+
+/* Company logo style for projects */
+.project-entry .company-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Dark mode styling for projects */
+body.dark-mode .project-entry {
+    background-color: #2d2d2d; /* Darker Gray */
+    border-color: #4d4d4d; /* Border Gray */
+}
+
+body.dark-mode .project-entry h3 {
+    color: #00b3ff;
+}
+
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Dark mode styling for work entries */
+body.dark-mode .work-entry {
+    background-color: #2d2d2d; /* Darker Gray */
+    border-color: #4d4d4d; /* Border Gray */
+}
+
+body.dark-mode .work-entry h3 {
+    color: #00b3ff;
+}
+/* Add styles for the contact information container */
+/* Add styles for the contact information container */
+.contact__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add space between items */
+    margin-top: 20px; /* Add space above the container */
+}
+
+/* Adjust styles for the contact information divs */
+.contact__information {
+    flex: 1 1 300px; /* Adjust width as needed */
+    margin-bottom: 20px;
+    text-align: center; /* Center the content within each div */
+}
+
+/* Adjust styles for the images */
+.contact__information img {
+    max-width: 50px; /* Adjust the maximum width of the images */
+    margin-bottom: 10px; /* Add space below the images */
+}
+
+/* Adjust styles for the form */
+#contact-form {
+    flex: 1 1 300px; /* Adjust width as needed */
+    margin-top: 20px; /* Add space above the form */
+}
+
+/* Basic styling for the images in the form */
+#contact-form img {
+    max-width: 50px; /* Adjust the maximum width of the images */
+    margin-bottom: 10px; /* Add space below the images */
+}
+
+
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Dark mode styling for contact form */
+body.dark-mode #contact {
+    background-color: #171212; /* Dark Gray */
+    color: #fff;
+}
+
+body.dark-mode form {
+    background-color: #2d2d2d; /* Darker Gray */
+    color: #fff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555; /* Dark Border Gray */
+}
+
+/* Dark mode styling for profile info */
+body.dark-mode #general-info {
+    color: #fff;
+}

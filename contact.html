@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="toggle-mode">
+                <img id="toggle-image" src="moon.jpg" alt="Toggle Mode">
+            </button>          
+        </nav>
+    </header>
+
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+        
+
+            <form id="contact-form" action="https://formspree.io/f/mdorvjwp" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact__container container grid">
+                <div class="contact__info-container">
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+    
+                        <div>
+                            <img src="call.jpg" alt="call">
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+1 314 3339250</span>
+                        </div>
+                    </div>
+    
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+    
+                        <div>
+                            <img src="email.png" alt="email">
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">roshithamakula3@gmail.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+    
+                        <div>
+                            <img src="location.jpg" alt="Location">
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Missouri, USA</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
